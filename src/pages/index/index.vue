@@ -2,7 +2,7 @@
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
-      <text class="title">{{ title }}</text>
+      <text class="title  text-3.5 flex-center grid-3-0  ">{{ title }}</text>
     </view>
   </view>
 </template>
@@ -35,7 +35,8 @@ const title = ref('Hello')
 }
 
 .title {
-  font-size: 36rpx;
+ 
   color: #8f8f94;
 }
+ 
 </style>
