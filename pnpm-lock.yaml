@@ -47,9 +47,6 @@ dependencies:
   '@dcloudio/uni-quickapp-webview':
     specifier: 3.0.0-4000720240327002
     version: 3.0.0-4000720240327002(postcss@8.4.38)(vue@3.4.27)
-  '@unocss/reset':
-    specifier: ^0.60.2
-    version: 0.60.2
   vue:
     specifier: ^3.3.11
     version: 3.4.27(typescript@4.9.5)
@@ -3222,6 +3219,7 @@ packages:
 
   /@unocss/reset@0.60.2:
     resolution: {integrity: sha512-kM0DYAcbmzpAyHefa/W+cifBTScWeZGsNpKagMQ6vci6OlTUiDB1GcmhQZ6dC0Ks59GtPmRbzZLaK1MgG6ayrA==}
+    dev: true
 
   /@unocss/rule-utils@0.60.2:
     resolution: {integrity: sha512-pg3XbU0s0TmmRk0UkSV6wTlca+Zz5xe9V+Mk8a5QqVp0oJ2jNWHO9AfzF4NcvTzM2zV2a/WbpjSBgoK8iAz3zg==}
