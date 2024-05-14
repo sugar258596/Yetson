@@ -10,4 +10,9 @@ onHide(() => {
   console.log("App Hide");
 });
 </script>
-<style></style>
+<style>
+page,
+view {
+  box-sizing: border-box;
+}
+</style>
