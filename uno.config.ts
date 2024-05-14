@@ -16,8 +16,12 @@ export default defineConfig({
   shortcuts: [
     {
       "flex-center": "flex justify-center items-center",
+      full: "w-full h-full",
     },
     [/^grid-(\d+)-(\d+)$/, ([, c, g = 0]) => `grid grid-cols-${c}  gap-${g}`],
+    [/^img-(.*)$/, ([, c]) => `full object-${c}`],
+    [/^ma-(\d+)-(\d+)$/, ([, i, b]) => `m-inline-${i} m-block-${b}`],
+    [/^pa-(\d+)-(\d+)$/, ([, i, b]) => `p-inline-${i} p-block-${b}`],
   ],
   theme: {
     // 解决小程序不支持 * 选择器
