@@ -1,7 +1,7 @@
 <template>
   <!-- 案例 -->
   <view>
-
+    案例
   </view>
 </template>
 

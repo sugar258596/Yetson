@@ -1,7 +1,7 @@
 <template>
   <!-- 商品 -->
   <view>
-
+    商品
   </view>
 </template>
 

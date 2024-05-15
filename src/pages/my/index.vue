@@ -1,7 +1,7 @@
 <template>
   <!--我的 -->
   <view>
-
+    我的
   </view>
 </template>
 
