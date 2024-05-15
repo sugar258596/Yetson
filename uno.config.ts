@@ -22,6 +22,11 @@ export default defineConfig({
     [/^img-(.*)$/, ([, c]) => `full object-${c}`],
     [/^ma-(\d+)-(\d+)$/, ([, i, b]) => `m-inline-${i} m-block-${b}`],
     [/^pa-(\d+)-(\d+)$/, ([, i, b]) => `p-inline-${i} p-block-${b}`],
+    [/^bor-(\d+)-(.*)$/, ([, b, c]) => `b-${b} b-solid b-${c}`],
+    [
+      /^border-([tblr])-(\d+)-(.*)$/,
+      ([, t, b, c]) => `b-${t}-${b} b-${t}-solid b-${t}-${c}`,
+    ],
   ],
   theme: {
     // 解决小程序不支持 * 选择器
@@ -41,7 +46,8 @@ export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
   variants: [],
   postprocess(utile) {
-    utile.selector = utile.selector.replace(/\\/g, "").replace(/%/g, "bf");
+    utile.selector = utile.selector.replace(/#|\\/g, "").replace(/%/g, "bf");
+
     // utile.entries.map((i) => {
     //   console.log(i);
     // });
