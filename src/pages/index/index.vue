@@ -1,6 +1,6 @@
 <template>
   <!-- 首页 -->
-  <view class="full">
+  <view class="full page">
     <swiper-model> </swiper-model>
     <view class="mt-3">
       <titleMode :title="'定制流程'">
@@ -25,18 +25,17 @@
         <titleMode :title="'品牌优势'">
           <template #content>
             <scroll-view scroll-x>
-              <view class="flex gap-3 justify-between pa-2-0">
-                <Card class="w-50 " v-for="v in 5" :key="v" style="flex: 0 0 auto;">
+              <view class="flex gap-3 justify-between px-2 pb-3">
+                <Card class="w-50" v-for="v in 5" :key="v" style="flex: 0 0 auto">
                   <view class="full h-50">
-                    <img class="img-cover" src="../../static/image/1.jpg" alt="">
+                    <img class="img-cover" src="../../static/image/1.jpg" alt="" />
                   </view>
                   <view class="ma-2-1">
                     <text class="t-4 indent-sm block">
-                      You'll receive an Impression Kit to create perfect molds of your teeth at home. Book a video call
-                      with
-                      an Impression Specialist for help with your impressions. send them back using your pre-paid
-                      shipping
-                      label.,
+                      You'll receive an Impression Kit to create perfect molds
+                      of your teeth at home. Book a video call with an
+                      Impression Specialist for help with your impressions. send
+                      them back using your pre-paid shipping label.,
                     </text>
                   </view>
                 </Card>
@@ -45,10 +44,13 @@
           </template>
         </titleMode>
       </view>
-      <view>
-
-      </view>
-
+    </view>
+    <view class="grid-3-2 ma-5-2">
+      <block v-for="v in 5" :key="v">
+        <view>
+          <img class="img-cover" :src="`../../static/logo/logo-${v}.webp`" alt="" srcset="" />
+        </view>
+      </block>
     </view>
   </view>
 </template>

@@ -20,8 +20,8 @@ export default defineConfig({
     },
     [/^grid-(\d+)-(\d+)$/, ([, c, g = 0]) => `grid grid-cols-${c}  gap-${g}`],
     [/^img-(.*)$/, ([, c]) => `full object-${c}`],
-    [/^ma-(\d+)-(\d+)$/, ([, i, b]) => `m-inline-${i} m-block-${b}`],
-    [/^pa-(\d+)-(\d+)$/, ([, i, b]) => `p-inline-${i} p-block-${b}`],
+    [/^ma-(\d+)-(\d+)$/, ([, i, b]) => `mx-${i} my-${b}`],
+    [/^pa-(\d+)-(\d+)$/, ([, i, b]) => `px-${i} py-${b}`],
     [/^bor-(\d+)-(.*)$/, ([, b, c]) => `b-${b} b-solid b-${c}`],
     [/^bor-rd-(.*)$/, ([, b]) => `b-rd-${b} overflow-hidden`],
     [
@@ -29,6 +29,17 @@ export default defineConfig({
       ([, t, b, c]) => `b-${t}-${b} b-${t}-solid b-${t}-${c}`,
     ],
     [/^t-(.*)$/, ([, s]) => `text-${s} color-zinc-500 `],
+  ],
+  rules: [
+    [
+      "page",
+      {
+        width: "100vw",
+        height: "100%",
+        "min-height": "100vh",
+        "background-color": " rgba( 183, 219, 239,.8)",
+      },
+    ],
   ],
   theme: {
     // 解决小程序不支持 * 选择器
