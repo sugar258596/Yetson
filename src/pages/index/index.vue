@@ -31,7 +31,7 @@
                     <img class="img-cover" src="../../static/image/1.jpg" alt="" lazy-load />
                   </view>
                   <view class="ma-2-1">
-                    <text class="t-4 indent-sm block">
+                    <text class="t-4 indent-sm block" user-select>
                       You'll receive an Impression Kit to create perfect molds
                       of your teeth at home. Book a video call with an
                       Impression Specialist for help with your impressions. send
