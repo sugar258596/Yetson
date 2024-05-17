@@ -4,7 +4,7 @@
       <text class="p-2  underline">商品类别</text>
     </view>
     <view class="grid-2-3 mt-3">
-      <block v-for="(v, i) in list">
+      <block v-for="(v, i) in list" :key="i">
         <Card class="">
           <view class="h-40 w-full">
             <img class="img-cover" :src="v.url" alt="" lazy-load>
