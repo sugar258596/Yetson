@@ -3,7 +3,7 @@
     <swiper circular indicatorDots autoplay interval="2000" duration="500">
       <block v-for="v in swiperLise" :key="v.id">
         <swiper-item class="w-full h-full">
-          <img class="img-cover" :src="v.url" />
+          <img class="img-cover" :src="v.url" lazy-load />
         </swiper-item>
       </block>
     </swiper>

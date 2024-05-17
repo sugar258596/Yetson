@@ -8,7 +8,7 @@
           <view class="pa-3-0 t-4">
             <view v-for="v in start" :key="v.id">
               <view class="full h-45 bor-rd-2">
-                <img class="img-cover" :src="v.url" alt="" srcset="" />
+                <img class="img-cover" :src="v.url" alt="" srcset="" lazy-load />
               </view>
               <view class="text-center ma-0-3">
                 <text class="border-b-1-blue-400 pa-7-1">{{ v.id }}</text>
@@ -28,7 +28,7 @@
               <view class="flex gap-3 justify-between px-2 pb-3">
                 <Card class="w-50" v-for="v in 5" :key="v" style="flex: 0 0 auto">
                   <view class="full h-50">
-                    <img class="img-cover" src="../../static/image/1.jpg" alt="" />
+                    <img class="img-cover" src="../../static/image/1.jpg" alt="" lazy-load />
                   </view>
                   <view class="ma-2-1">
                     <text class="t-4 indent-sm block">
@@ -48,7 +48,7 @@
     <view class="grid-3-2 ma-5-2">
       <block v-for="v in 5" :key="v">
         <view>
-          <img class="img-cover" :src="`../../static/logo/logo-${v}.webp`" alt="" srcset="" />
+          <img class="img-cover" :src="`../../static/logo/logo-${v}.webp`" alt="" srcset="" lazy-load />
         </view>
       </block>
     </view>

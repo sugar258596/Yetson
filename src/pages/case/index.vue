@@ -16,9 +16,11 @@
           <text class=" text-5 ">Fast, easy and simple!</text>
         </view>
         <view class="indent-sm">
-          <text class="t-3"> "Having a big smile and a good laugh is very important to me on the daily. That’s why I’ve
+          <text class="t-3" user-select> "Having a big smile and a good laugh is very important to me on the daily.
+            That’s why I’ve
             decided to start my invisible braces journey with NewSmile®"</text>
         </view>
+        <view></view>
 
       </view>
     </view>

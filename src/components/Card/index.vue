@@ -1,11 +1,11 @@
 <template>
   <view class="box-show full bor-rd-2">
-     <slot></slot>
+    <slot></slot>
   </view>
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'card' })
+defineOptions({ name: 'Card' })
 
 </script>
 <style lang="scss" scoped>
