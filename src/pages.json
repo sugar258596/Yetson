@@ -58,5 +58,18 @@
 			"text": "我的"
 		}
 	]
-	}
+	},
+	"subPackages": [  
+		{
+			"root": "subpages",
+			"pages": [
+				{
+					"path": "shop/details",
+					"style": {
+						"navigationBarTitleText": "商品详情"
+					}
+				}
+			]
+		}
+	]
 }
