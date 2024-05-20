@@ -3,7 +3,7 @@
     <slot name="title"></slot>
     <view class="grid-5-0 py-2 ">
       <block v-for="(item, index) in List" :key="item.id">
-        <view class="flex flex-col items-center gap-2 bor-1-zinc-600 py-3">
+        <view class="flex flex-col items-center gap-2   py-3" @click="headleClick(item)">
           <view class="w-8 h-8" :wx:if="item.icon">
             <img class="img-cover" :src="item.icon" alt="" lazy-load>
           </view>
@@ -24,6 +24,14 @@ defineProps({
     required: true
   },
 })
+
+const emits = defineEmits<{
+  (event: 'headleClick', tager: contnetProps): void
+}>()
+
+const headleClick = (tager: contnetProps) => {
+  emits('headleClick', tager)
+}
 
 </script>
 <style lang="scss" scoped></style>

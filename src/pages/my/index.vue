@@ -1,6 +1,6 @@
 <template>
   <!--我的 -->
-  <view class="page">
+  <view class="page bg-linear">
     <!-- 未登录状态 -->
     <view class="pa-4-2 flex gap-3">
       <view class=" w-15 h-15  bor-rd-5 bg-amber">
@@ -20,30 +20,44 @@
       </view>
     </view>
 
-    <contnetModel :List="iconList">
-      <template #title>
-        <view class="flex justify-between px-3 t-3">
-          <view class="color-black font-700">
-            <text>我的订单</text>
-          </view>
-          <view>
-            <text>查看全部订单></text>
-          </view>
-        </view>
-      </template>
-    </contnetModel>
+    <view class="mt-3">
+      <unCard>
+        <contnetModel :List="iconList">
+          <template #title>
+            <view class="flex justify-between px-3 t-3">
+              <view class="color-black font-700">
+                <text>我的订单</text>
+              </view>
+              <view>
+                <text>查看全部订单></text>
+              </view>
+            </view>
+          </template>
+        </contnetModel>
+      </unCard>
+    </view>
 
-    <contnetModel :List="titltLsit">
-    </contnetModel>
-
-    <contnetModel :List="afterSalesList">
-      <template #title>
-        <view class="flex justify-between px-3 t-4">
-          <view class="color-black font-700"> 售后服务 </view>
-        </view>
-      </template>
-    </contnetModel>
-
+    <view class="mt-3">
+      <unCard>
+        <contnetModel :List="titltLsit" @headle-click="goAddress">
+        </contnetModel>
+      </unCard>
+    </view>
+    <view class="mt-3">
+      <unCard>
+        <contnetModel :List="afterSalesList">
+          <template #title>
+            <view class="flex justify-between px-3 t-4">
+              <view class="color-black font-700"> 售后服务 </view>
+            </view>
+          </template>
+        </contnetModel>
+      </unCard>
+    </view>
+    <button @click="routerTo">
+      跳转2
+    </button>
+    <button @click="login">登录</button>
   </view>
 </template>
 
@@ -80,19 +94,25 @@ const iconList = reactive([
 const titltLsit = reactive([
   {
     id: 1,
-    title: '购物车'
+    title: '购物车',
+    url: "cart"
   }, {
     id: 2,
-    title: '收货地址'
+    title: '收货地址',
+    url: "address"
   }, {
     id: 3,
-    title: '客户咨询'
+    title: '客户咨询',
+    url: "consult"
   }, {
     id: 4,
-    title: '赠品'
-  }, {
-    id: 5,
-    title: '个人信息'
+    title: '优惠卷',
+    url: "coupon"
+  },
+  {
+    id: 6,
+    title: '个人信息',
+    url: 'info'
   }
 ])
 
@@ -108,6 +128,28 @@ const afterSalesList = reactive([
     title: '常见问题',
   }
 ])
+
+
+const routerTo = () => {
+  uni.navigateTo({
+    url: '/subpages/shop/details'
+  });
+}
+
+const login = () => {
+  uni.login({
+    provider: 'weixin',
+    success: function (res) {
+      console.log('登录成功', res);
+    }
+  });
+}
+
+const goAddress = (e) => {
+  uni.navigateTo({
+    url: `/subpages/settings/${e.url}`
+  });
+}
 
 </script>
 <style lang="scss" scoped></style>

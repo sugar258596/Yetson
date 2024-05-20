@@ -21,12 +21,12 @@
           </view>
         </template>
       </titleMode>
-      <view class="mt-5">
-        <titleMode :title="'品牌优势'">
+      <view class="pt-5 bg-linear">
+        <titleMode :title="'品牌优势'" class=" color-white">
           <template #content>
             <scroll-view scroll-x>
               <view class="flex gap-3 justify-between px-2 pb-3">
-                <Card class="w-50" v-for="v in 5" :key="v" style="flex: 0 0 auto">
+                <unCard class="w-50" v-for="v in 5" :key="v" style="flex: 0 0 auto">
                   <view class="full h-50">
                     <img class="img-cover" src="../../static/image/1.jpg" alt="" lazy-load />
                   </view>
@@ -38,7 +38,7 @@
                       them back using your pre-paid shipping label.,
                     </text>
                   </view>
-                </Card>
+                </unCard>
               </view>
             </scroll-view>
           </template>

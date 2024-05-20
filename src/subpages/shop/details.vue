@@ -7,16 +7,15 @@
         </view>
       </swiper-item>
     </swiper>
-    <Card>
+    <unCard>
       <view class="py-3 mx-2">
         <view class="text-5 font-black accent-black">
           <text>商品名称</text>
         </view>
         <view class="t-3 indent-sm line-clamp-3">
-          <text>Ecommerce personalization is the art of delivering a shopping experience that targets individuals. It
-            allows you to be an active part of the customer journey and interact with customers throughout their
-            journey,
-            even online.</text>
+          <text user-select>Ecommerce personalization is the art of delivering a shopping experience that targets
+            individuals. It allows you to be an active part of the customer journey and interact with customers
+            throughout their journey, even online.</text>
         </view>
         <view class="flex justify-between pt-1">
           <view class="flex-center gap-2">
@@ -32,20 +31,25 @@
           </view>
         </view>
       </view>
-    </Card>
+    </unCard>
 
     <view class="my-3">
-      <Card>
+      <unCard>
         <view class="h-10 flex-center gap-5 t-4">
           <view v-for="v in titleList" :key="v.id">· {{ v.title }}</view>
         </view>
-      </Card>
+      </unCard>
     </view>
 
     <view>
       <img class="img-cover" src="../../static/90.jpg" alt="" mode="widthFix" lazy-load>
     </view>
+
   </view>
+  <van-goods-action>
+    <van-goods-action-icon icon="chat-o" text="客服" />
+    <van-goods-action-button text="立即购买" />
+  </van-goods-action>
 </template>
 
 <script setup lang="ts">

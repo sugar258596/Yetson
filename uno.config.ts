@@ -31,15 +31,8 @@ export default defineConfig({
     [/^t-(.*)$/, ([, s]) => `text-${s} color-zinc-500 `],
   ],
   rules: [
-    [
-      "page",
-      {
-        width: "100vw",
-        height: "100%",
-        "min-height": "100vh",
-        "background-color": " rgba( 183, 219, 239,.8)",
-      },
-    ],
+    ["page", { width: "100vw", height: "100%", "min-height": "100vh" }],
+    ["bg-linear", { background: "linear-gradient(to right,#9f9fd9, pink)" }],
   ],
   theme: {
     // 解决小程序不支持 * 选择器

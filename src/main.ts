@@ -8,7 +8,7 @@ import App from "./App.vue";
 export function createApp() {
   const app = createSSRApp(App);
 
-  app.component("Card", Card);
+  app.component("unCard", Card);
 
   return {
     app,

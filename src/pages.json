@@ -1,21 +1,24 @@
 {
-	"pages": [  
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页"
 			}
-		},{
+		},
+		{
 			"path": "pages/case/index",
 			"style": {
 				"navigationBarTitleText": "案例"
 			}
-		},{
+		},
+		{
 			"path": "pages/product/index",
 			"style": {
 				"navigationBarTitleText": "商品"
 			}
-		},{
+		},
+		{
 			"path": "pages/my/index",
 			"style": {
 				"navigationBarTitleText": "个人中心"
@@ -26,50 +29,83 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-swipe-cell": "/wxcomponents/vant/swipe-cell/index"
+		}
+		
 	},
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#3cc51f",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
-		"list": [{
-			"pagePath": "pages/index/index",
-			"iconPath": "static/table/shouye.png",
-			"selectedIconPath": "static/table/shouye-copy.png",
-			"text": "首页"
-		},
-		 {
-			"pagePath": "pages/case/index",
-			"iconPath": "static/table/anli.png",
-			"selectedIconPath": "static/table/anli-copy.png",
-			"text": "案例"
-		},
-		 {
-			"pagePath": "pages/product/index",
-			"iconPath": "static/table/pinzhengshangpin.png",
-			"selectedIconPath": "static/table/pinzhengshangpin-copy.png",
-			"text": "商品"
-		},
-		 {
-			"pagePath": "pages/my/index",
-			"iconPath": "static/table/wode.png",
-			"selectedIconPath": "static/table/wode-copy.png",
-			"text": "我的"
-		}
-	]
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/table/shouye.png",
+				"selectedIconPath": "static/table/shouye-copy.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/case/index",
+				"iconPath": "static/table/anli.png",
+				"selectedIconPath": "static/table/anli-copy.png",
+				"text": "案例"
+			},
+			{
+				"pagePath": "pages/product/index",
+				"iconPath": "static/table/pinzhengshangpin.png",
+				"selectedIconPath": "static/table/pinzhengshangpin-copy.png",
+				"text": "商品"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/table/wode.png",
+				"selectedIconPath": "static/table/wode-copy.png",
+				"text": "我的"
+			}
+		]
 	},
-	"subPackages": [  
+	"subPackages": [
 		{
-			"root": "subpages",
+			"root": "subpages/shop",
+			"name": "shop",
 			"pages": [
 				{
-					"path": "shop/details",
+					"path": "details",
 					"style": {
-						"navigationBarTitleText": "商品详情"
+						"navigationBarTitleText": "商品详情",
+						"usingComponents": {
+							"van-goods-action": "/wxcomponents/vant/goods-action/index",
+							"van-goods-action-icon": "/wxcomponents/vant/goods-action-icon/index",
+							"van-goods-action-button": "/wxcomponents/vant/goods-action-button/index"
+						}
+					}
+				}
+			]
+		},
+		{
+			"root": "subpages/settings",
+			"name": "set",
+			"pages": [
+				{
+					"path": "address",
+					"style": {
+						"navigationBarTitleText": "地址管理",
+						"usingComponents": {
+ 
+						}
+					}
+				},
+				{
+					"path": "info",
+					"style": {
+						"navigationBarTitleText": "个人信息"
 					}
 				}
 			]
 		}
-	]
+	],
+	"preloadRule": {}
 }

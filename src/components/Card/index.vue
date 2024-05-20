@@ -5,11 +5,12 @@
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'Card' })
+defineOptions({ name: 'unCard' })
 
 </script>
 <style lang="scss" scoped>
 .box-show {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+  background-color: #fff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, .4);
 }
 </style>

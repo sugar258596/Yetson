@@ -5,7 +5,7 @@
     </view>
     <view class="grid-2-3 mt-3">
       <block v-for="(v, i) in list" :key="i">
-        <Card class="">
+        <unCard class="">
           <view class="h-40 w-full">
             <img class="img-cover" :src="v.url" alt="" lazy-load>
           </view>
@@ -13,7 +13,7 @@
             <text class="font-black">{{ v.name }}</text>
             <text class="t-3">${{ v.price }}</text>
           </view>
-        </Card>
+        </unCard>
       </block>
     </view>
   </view>
