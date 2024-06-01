@@ -4,12 +4,12 @@
     <view class="grid-2-3 pa-3-2">
       <view class="bg-red  grid-box h-35" v-for="v in 6" :key="v">
         {{ v }}
-        <!-- <img class="img-cover" src="../../static/image/1.jpg" alt=""> -->
+        <!-- <img class="img-contain" src="../../static/image/1.jpg" alt=""> -->
       </view>
     </view>
     <view class="px-3 py-2" v-for="v in 3" :key="v">
       <view class="full h-60 bor-rd-3">
-        <img src="../../static/image/4.webp" alt="" class="img-cover">
+        <img src="../../static/image/4.webp" alt="" class="img-contain">
       </view>
       <view class="my-2">
         <view class="t-0 text-center font-black">

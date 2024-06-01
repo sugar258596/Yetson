@@ -8,7 +8,7 @@
           <view class="pa-3-0 t-4">
             <view v-for="v in start" :key="v.id">
               <view class="full h-45 bor-rd-2">
-                <img class="img-cover" :src="v.url" alt="" srcset="" lazy-load />
+                <img class="img-contain" :src="v.url" alt="" srcset="" lazy-load />
               </view>
               <view class="text-center ma-0-3">
                 <text class="border-b-1-blue-400 pa-7-1">{{ v.id }}</text>
@@ -28,7 +28,7 @@
               <view class="flex gap-3 justify-between px-2 pb-3">
                 <unCard class="w-50" v-for="v in 5" :key="v" style="flex: 0 0 auto">
                   <view class="full h-50">
-                    <img class="img-cover" src="../../static/image/1.jpg" alt="" lazy-load />
+                    <img class="img-contain" src="../../static/image/1.jpg" alt="" lazy-load />
                   </view>
                   <view class="ma-2-1">
                     <text class="t-4 indent-sm" user-select>
@@ -48,10 +48,11 @@
     <view class="grid-3-2 ma-5-2">
       <block v-for="v in 5" :key="v">
         <view>
-          <img class="img-cover" :src="`../../static/logo/logo-${v}.webp`" alt="" srcset="" lazy-load />
+          <img class="img-contain" :src="`../../static/logo/logo-${v}.webp`" alt="" srcset="" lazy-load />
         </view>
       </block>
     </view>
+    <!-- 新加 -->
     <view class="p-5 color-white bg-linear text-center ">
       <view class="text-8 ">
         <text>是什麽讓我們更出色？</text>
@@ -96,7 +97,38 @@
           <text> THE CLEAR ALIGNERS THAT DOCTORS TRUST</text>
         </view>
       </view>
+      <view class="mt-3  text-left">
+        <view class="text-3">
+          <text>
+            市面上大部分透明牙套品牌都使用多層壓膠
+          </text>
+        </view>
+        <view class="text-2">
+          <text>
+            * Multi-laminate plastic is used by major leading brands in the market.
+          </text>
+        </view>
+      </view>
     </view>
+    <!-- footer -->
+    <view class="p-3">
+      <view class="t-3 font-black">
+        <view>
+          <text>已獲得全球主要醫療監管機構的注冊，批准及認可：</text>
+        </view>
+        <view class="mt-1">
+          <text>Approved by major regulatory agencies worldwide:</text>
+        </view>
+      </view>
+      <view class="grid-3-3">
+        <block v-for=" v in 5" :key="v">
+          <view class="h-10">
+            <img class="img-contain" :src="`../../static/home/footer-${v}.jpg`" alt="" srcset="">
+          </view>
+        </block>
+      </view>
+    </view>
+
   </view>
 </template>
 

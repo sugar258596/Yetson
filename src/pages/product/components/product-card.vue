@@ -7,7 +7,7 @@
       <block v-for="(v, i) in list" :key="i">
         <unCard class="">
           <view class="h-40 w-full">
-            <img class="img-cover" :src="v.url" alt="" lazy-load>
+            <img class="img-contain" :src="v.url" alt="" lazy-load>
           </view>
           <view class=" color-zinc-600 text-center flex flex-col pt-1 pb-3">
             <text class="font-black">{{ v.name }}</text>

@@ -4,7 +4,7 @@
     <!-- 未登录状态 -->
     <view class="pa-4-2 flex gap-3">
       <view class=" w-15 h-15  bor-rd-5 bg-amber">
-        <img class="img-cover" src="../../static/th.jpg" alt="" lazy-load>
+        <img class="img-contain" src="../../static/th.jpg" alt="" lazy-load>
       </view>
       <view class="pa-0-2">
         <view class="t-4 font-700 color-black">点击显示微信头像</view>
