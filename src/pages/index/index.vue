@@ -45,10 +45,11 @@
         </titleMode>
       </view>
     </view>
-    <view class="grid-3-2 ma-5-2">
+    <view class="grid-5-2 ma-5-2">
       <block v-for="v in 5" :key="v">
-        <view>
-          <img class="img-contain" :src="`../../static/logo/logo-${v}.webp`" alt="" srcset="" lazy-load />
+        <view class="h-10">
+          <img class="img-contain" :src="`../../static/logo/logo-${v}.webp`" alt="" srcset="" lazy-load
+            mode="aspectFit" />
         </view>
       </block>
     </view>
@@ -120,10 +121,11 @@
           <text>Approved by major regulatory agencies worldwide:</text>
         </view>
       </view>
-      <view class="grid-3-3">
+      <view class="grid-5-3 mt-3">
         <block v-for=" v in 5" :key="v">
           <view class="h-10">
-            <img class="img-contain" :src="`../../static/home/footer-${v}.jpg`" alt="" srcset="">
+            <img class="img-contain" :src="`../../static/home/footer-${v}.jpg`" alt="" srcset="" mode="aspectFit"
+              lazy-load>
           </view>
         </block>
       </view>
