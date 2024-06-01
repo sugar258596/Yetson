@@ -29,10 +29,8 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"usingComponents": {
-			"van-swipe-cell": "/wxcomponents/vant/swipe-cell/index"
-		}
+		"backgroundColor": "#F8F8F8"
+	
 		
 	},
 	"tabBar": {
@@ -94,7 +92,20 @@
 					"style": {
 						"navigationBarTitleText": "地址管理",
 						"usingComponents": {
- 
+							"van-swipe-cell": "/wxcomponents/vant/swipe-cell/index",
+							"van-cell-group": "/wxcomponents/vant/cell-group/index",
+							"van-cell": "/wxcomponents/vant/cell/index",
+						  "van-dialog": "/wxcomponents/vant/dialog/index"
+						}
+					}
+				},	{
+					"path": "module",
+					"style": {
+						"usingComponents": {
+							"van-cell-group": "/wxcomponents/vant/cell-group/index",
+							"van-field": "/wxcomponents/vant/field/index",
+							"van-area": "/wxcomponents/vant/area/index",
+							"van-popup": "/wxcomponents/vant/popup/index"
 						}
 					}
 				},

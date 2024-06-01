@@ -73,6 +73,9 @@ devDependencies:
   '@dcloudio/vite-plugin-uni':
     specifier: 3.0.0-4000720240327002
     version: 3.0.0-4000720240327002(postcss@8.4.38)(vite@4.3.5)(vue@3.4.27)
+  '@vant/area-data':
+    specifier: ^1.5.1
+    version: 1.5.1
   '@vue/runtime-core':
     specifier: ^3.3.11
     version: 3.4.27
@@ -3291,6 +3294,10 @@ packages:
       vite: 4.3.5(sass@1.77.1)(terser@5.31.0)
     transitivePeerDependencies:
       - rollup
+    dev: true
+
+  /@vant/area-data@1.5.1:
+    resolution: {integrity: sha512-gR5TPEzTbxN1cTK1aDhCoyikSCLX7DAacxyXoKyI4SAsYYTZrDl/nLgQFIm9vLsvWzlPIda8xV8/U3x7M9k6ww==}
     dev: true
 
   /@vant/weapp@1.11.6:

@@ -95,7 +95,7 @@ const titltLsit = reactive([
   {
     id: 1,
     title: '购物车',
-    url: "cart"
+    url: "module"
   }, {
     id: 2,
     title: '收货地址',
@@ -145,7 +145,7 @@ const login = () => {
   });
 }
 
-const goAddress = (e) => {
+const goAddress = (e: any) => {
   uni.navigateTo({
     url: `/subpages/settings/${e.url}`
   });
